@@ -89,7 +89,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     };
 
     let db_client = DBClient::new(pool);
-    let app_state: AppState = AppState {
+    let app_state = AppState {
         env: config.clone(),
         db_client,
     };
